@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form-validation</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <h1>Formvalidation</h1>
+    <form action="" name="myform" id="myform" onsubmit="return validateForm()">
+      <div>
+        <label for="first-name">First Name:</label>
+        <input
+          type="text"
+          name="first-name"
+          id="first-name"
+          placeholder="First-Name"
+        />
+        <span id="first-errormsg"></span>
+      </div>
+
+      <div>
+        <label for="Last-name">Last Name:</label>
+        <input
+          type="text"
+          name="last-name"
+          id="last-name"
+          placeholder="Last-Name"
+        />
+        <span id="last-name-errormsg"></span>
+      </div>
+
+      <div>
+        <label for="dob">Date of birth:</label>
+        <input type="text" name="dob" id="dob" placeholder="dd-mm-yyyy" />
+        <span id="dob-errormsg"></span>
+      </div>
+
+      <div>
+        <label for="university"> University:</label>
+        <select name="university" id="university">
+          <option value="Select your university:" disabled selected>
+            Select your university:
+          </option>
+          <option value="Nirma university">Nirma university</option>
+          <option value="Marwadi university">Marwadi university</option>
+          <option value="Gujarat Vidyapith">Gujarat Vidyapith</option>
+          <option value="Sumandeep Vidyapeeth">Sumandeep Vidyapeeth</option>
+        </select>
+        <span id="university-errormsg"></span>
+      </div>
+
+      <div>
+        <label>Gender:</label>
+        <input type="radio" name="Gender" id="Male" value="Male" />
+        <label for="Male">Male</label>
+        <input type="radio" name="Gender" id="Female" value="Female" />
+        <label for="female">female</label>
+        <span id="gender-errormsg"></span>
+      </div>
+
+      <div>
+        <label for="mobile-no">Mobile Number:</label>
+        <input
+          type="text"
+          name="mobile-no"
+          id="mobile-no"
+          placeholder="xxxxx xxxxx"
+        />
+        <span id="mobile-errormsg"></span>
+      </div>
+
+      <div>
+        <label for="email-id">Email Id:</label>
+        <input
+          type="text"
+          name="email-id"
+          id="email-id"
+          placeholder="xyz@gmail.com"
+        />
+        <span id="email-id-errormsg"></span>
+      </div>
+
+      <div>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="********"
+        />
+        <span id="password-errormsg"></span>
+      </div>
+
+      <div>
+        <label for="confirm-password">Confirm password:</label>
+        <input
+          type="password"
+          name="confirm-password"
+          id="Confirm-password"
+          placeholder="Enter your confirm password"
+        />
+        <span id="confirm-password-errormsg"></span>
+      </div>
+
+      <div>
+        <label>favorite food:</label>
+        <input type="checkbox" id="Pizza" value="Pizza" />
+        <label for="Pizza">Pizza</label>
+        <input type="checkbox" id="Burger" value="Burger" />
+        <label for="Burger">Burger</label>
+        <input type="checkbox" id="Maggi" value="Maggi" />
+        <label for="Maggi">Maggi</label>
+        <input type="checkbox" id="Noodles" value="Noodles" />
+        <label for="Noodles">Noodles</label>
+        <input type="checkbox" id="Momos" value="Momos" />
+        <label for="Momos">Momos</label>
+        <span id="food-errormsg"></span>
+      </div>
+
+      <div>
+        <label for="msg">Enter message:</label>
+        <textarea
+          name="msg"
+          id="msg"
+          rows="3"
+          cols="30"
+          placeholder="Enter your message"
+        ></textarea>
+        <span id="msg error"></span>
+      </div>
+
+      <div>
+        <input type="submit" value="submit" />
+      </div>
+    </form>
+
+    <table id="display-information" class="hide">
+      <tr>
+        <th>First Name:</th>
+        <td id="firstname"></td>
+      </tr>
+
+      <tr>
+        <th>last Name:</th>
+        <td id="lastname"></td>
+      </tr>
+
+      <tr>
+        <th>Date of birth:</th>
+        <td id="dateofbirth"></td>
+      </tr>
+
+      <tr>
+        <th>University:</th>
+        <td id="university-display"></td>
+      </tr>
+
+      <tr>
+        <th>Gender:</th>
+        <td id="gen"></td>
+      </tr>
+
+      <tr>
+        <th>Mobile Number:</th>
+        <td id="mobile"></td>
+      </tr>
+
+      <tr>
+        <th>Email-Id:</th>
+        <td id="email"></td>
+      </tr>
+
+      <tr>
+        <th>Password:</th>
+        <td id="pass"></td>
+      </tr>
+
+      <tr>
+        <th>Confirm password:</th>
+        <td id="Confirm"></td>
+      </tr>
+
+      <tr>
+        <th>favorite food:</th>
+        <td id="fav-food"></td>
+      </tr>
+
+      <tr>
+        <th>Enter message:</th>
+        <td id="msg"></td>
+      </tr>
+    </table>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
